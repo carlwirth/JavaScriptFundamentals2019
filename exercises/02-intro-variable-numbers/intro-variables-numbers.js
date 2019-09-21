@@ -1,39 +1,42 @@
 //set myName variable to your name;
-function myName(name) {
-  let myName = name;
-
-  return myName;
+function myName(Carl) {
+    const myName = (Carl);
+    expect(name).equal(Carl)
+    return myName;
 }
 
 function setTeachersNames(teachersName) {
-  // change code below this line so that we can set the variable.
-  const teachers = null;
-  teachers = teachersName; //  <- this is  invalid because teachers is a const. How can we fix this?
+    // change code below this line so that we can set the variable.
+    let teachers = null;
+    teachers = teachersName; //  <- this is  invalid because teachers is a const. How can we fix this?
 
-  return teachers;
+    return teachers;
 }
 
 /*** return the sum of both arguments  ***/
 function add(a, b) {
-  let sum;
+    let sum = a + b;
 
-  return sum;
+    return sum;
 }
 
 /*** Using the increment operator, add a year to the argument and make me older */
 function ageMeByAYear(age) {
-  return age;
+    return ++age;
 }
 
 /*** Using the decrement operator make me age decrement by a year  ***/
 function makeMeYoungerByAYear(age) {
-  return age;
+    return --age;
 }
 
 /** Take the argument that will be a string and return an integer  */
 function convertStringToInt(str) {
-  let int;
-  return int;
+    let int;
+    // I put the next line in 
+    int = number(str)
+
+    return int;
 }
 
 /*** Using the String method indexOf find the first position of the letter in the name  */
@@ -46,16 +49,16 @@ function convertStringToInt(str) {
  *
  */
 function getTheCharacterPosition(name, letter) {
-  let characterPosition;
-  return characterPosition;
+    let characterPosition;
+    return characterPosition;
 }
 
 /** Take the argument and return the length of the argument */
 
 function stringLength(str) {
-  let strLength;
+    let strLength;
 
-  return strLength;
+    return strLength;
 }
 
 /***  return the last character of the argument
@@ -66,9 +69,9 @@ function stringLength(str) {
  */
 
 function getLastCharacter(str) {
-  let lastCharacter;
+    let lastCharacter;
 
-  return lastCharacter;
+    return lastCharacter;
 }
 
 /** Return the last part of a place name
@@ -84,9 +87,9 @@ function getLastCharacter(str) {
  */
 
 function getLastWordInPlaceName(place) {
-  let newPlace;
+    let newPlace;
 
-  return newPlace;
+    return newPlace;
 }
 
 /***
@@ -95,9 +98,9 @@ function getLastWordInPlaceName(place) {
  */
 
 function getLargerNumber(arg1, arg2) {
-  let largestNumber;
+    let largestNumber;
 
-  return largestNumber;
+    return largestNumber;
 }
 
 /*** A person just got married and they need their last name replaced.
@@ -113,8 +116,8 @@ function getLargerNumber(arg1, arg2) {
  */
 
 function replaceLastName(fullName, newLastName) {
-  let newFullName;
-  return newFullName;
+    let newFullName;
+    return newFullName;
 }
 
 /***
@@ -123,9 +126,9 @@ function replaceLastName(fullName, newLastName) {
  */
 
 function capitalizeLastName(fullName) {
-  let capitalizeLastName;
+    let capitalizeLastName;
 
-  return capitalizeLastName;
+    return capitalizeLastName;
 }
 
 /***
@@ -134,11 +137,11 @@ function capitalizeLastName(fullName) {
  *
  */
 function compareEquality(a, b) {
-  if (a == b) {
-    // Change this line
-    return 'Equal';
-  }
-  return 'Not Equal';
+    if (a == b) {
+        // Change this line
+        return 'Equal';
+    }
+    return 'Not Equal';
 }
 
 /** The function should use the strict inequality operator
@@ -154,13 +157,13 @@ function compareEquality(a, b) {
  */
 
 function testStrictNotEqual(a, b) {
-  // Only Change Code Below this Line
-  if (undefined) {
-    // Only Change Code Above this Line
+    // Only Change Code Below this Line
+    if (undefined) {
+        // Only Change Code Above this Line
 
-    return 'Not Equal';
-  }
-  return 'Equal';
+        return 'Not Equal';
+    }
+    return 'Equal';
 }
 
 /***
@@ -176,7 +179,7 @@ function testStrictNotEqual(a, b) {
  */
 
 function testLogicalAnd(num) {
-  // code here
+    // code here
 }
 
 /**
@@ -189,13 +192,13 @@ function testLogicalAnd(num) {
  */
 
 function testLogicalOr(num) {
-  // code here
+    // code here
 }
 
 /** Using the modulus operator determine if the argument is an even or odd number */
 
 function isEvenOrOdd(isEven) {
-  return isEven;
+    return isEven;
 }
 
 /****
@@ -241,47 +244,47 @@ function caseInSwitch(num) {}
  *
  */
 function lowerCaseName(str) {
-  if (!str) {
-    return;
-  }
-  return str.toLowerCase();
+    if (!str) {
+        return;
+    }
+    return str.toLowerCase();
 }
 let myExports = {
-  myName,
-  setTeachersNames,
-  add,
-  ageMeByAYear,
-  makeMeYoungerByAYear,
-  isEvenOrOdd,
-  convertStringToInt,
-  getTheCharacterPosition,
-  stringLength,
-  getLastCharacter,
-  getLastWordInPlaceName,
-  getLargerNumber,
-  compareEquality,
-  replaceLastName,
-  capitalizeLastName,
-  testStrictNotEqual,
-  testLogicalAnd,
-  testLogicalOr,
-  caseInSwitch,
-  timesFive: () => {},
-  lowerCaseName: () => {}
+    myName,
+    setTeachersNames,
+    add,
+    ageMeByAYear,
+    makeMeYoungerByAYear,
+    isEvenOrOdd,
+    convertStringToInt,
+    getTheCharacterPosition,
+    stringLength,
+    getLastCharacter,
+    getLastWordInPlaceName,
+    getLargerNumber,
+    compareEquality,
+    replaceLastName,
+    capitalizeLastName,
+    testStrictNotEqual,
+    testLogicalAnd,
+    testLogicalOr,
+    caseInSwitch,
+    timesFive: () => {},
+    lowerCaseName: () => {}
 };
 try {
-  //eslint-disable-next-line no-undef
-  if (timesFive) myExports.timesFive = timesFive;
-  // eslint-disable-next-line no-undef
+    //eslint-disable-next-line no-undef
+    if (timesFive) myExports.timesFive = timesFive;
+    // eslint-disable-next-line no-undef
 } catch (e) {}
 
 try {
-  //eslint-disable-next-line no-undef
+    //eslint-disable-next-line no-undef
 
-  // eslint-disable-next-line no-undef
-  if (lowerCaseName) {
-    myExports.lowerCaseName = lowerCaseName;
-  }
+    // eslint-disable-next-line no-undef
+    if (lowerCaseName) {
+        myExports.lowerCaseName = lowerCaseName;
+    }
 } catch (e) {}
 
 module.exports = myExports;
