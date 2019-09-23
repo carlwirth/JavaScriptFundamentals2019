@@ -1,13 +1,13 @@
 //set myName variable to your name;
-function myName(Carl) {
-    const myName = (Carl);
-    expect(name).equal(Carl)
+function myName(name) {
+    const myName = name;
     return myName;
 }
 
+
 function setTeachersNames(teachersName) {
     // change code below this line so that we can set the variable.
-    let teachers = null;
+    let teachers = teachersName;
     teachers = teachersName; //  <- this is  invalid because teachers is a const. How can we fix this?
 
     return teachers;
@@ -35,6 +35,8 @@ function convertStringToInt(str) {
     let int;
     // I put the next line in 
     int = number(str)
+
+    // int foo = Integer.parseInt(myString);
 
     return int;
 }
@@ -91,6 +93,8 @@ function getLastWordInPlaceName(place) {
 
     return newPlace;
 }
+
+//STOP HERE 
 
 /***
  *  Using Conditonal logic compare both arguments and return the largest argument
