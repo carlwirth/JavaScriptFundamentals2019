@@ -1,6 +1,6 @@
 //set myName variable to your name;
 function myName(name) {
-    const myName = name;
+    const myName = test;
     return myName;
 }
 
@@ -332,4 +332,4 @@ try {
     }
 } catch (e) {}
 
-export default myExports;
+module.exports = myExports;
