@@ -34,7 +34,7 @@ function makeMeYoungerByAYear(age) {
 function convertStringToInt(str) {
     let int;
     // I put the next line in 
-    int = number(str)
+    int = parseInt(str)
 
     // int foo = Integer.parseInt(myString);
 
@@ -51,17 +51,21 @@ function convertStringToInt(str) {
  *
  */
 function getTheCharacterPosition(name, letter) {
-    let characterPosition;
-    return characterPosition;
+    const index = name.indexOf(letter);
+    return index;
+    //getTheCharacterPosition('Carl','C');
 }
+
 
 /** Take the argument and return the length of the argument */
 
 function stringLength(str) {
-    let strLength;
+    // let billy = (str);
+    let bob = stringLength(str.Length);
+    return bob;
 
-    return strLength;
 }
+
 
 /***  return the last character of the argument
  *  ie Washington
@@ -71,10 +75,13 @@ function stringLength(str) {
  */
 
 function getLastCharacter(str) {
-    let lastCharacter;
-
-    return lastCharacter;
+    const last = str[str.length - 1];
+    return last;
+    //carl
+    //str[str.lenght-1];
 }
+
+
 
 /** Return the last part of a place name
  *
@@ -89,12 +96,11 @@ function getLastCharacter(str) {
  */
 
 function getLastWordInPlaceName(place) {
-    let newPlace;
-
+    const index = place.indexOf(" ");
+    let newPlace = place.substring(index + 1);
     return newPlace;
 }
 
-//STOP HERE 
 
 /***
  *  Using Conditonal logic compare both arguments and return the largest argument
@@ -102,7 +108,12 @@ function getLastWordInPlaceName(place) {
  */
 
 function getLargerNumber(arg1, arg2) {
-    let largestNumber;
+    let ayy = (arg1);
+    let bee = (arg2);
+    if (ayy > bee) {
+        let largestNumber = (ayy);
+    } else largestNumber = (bee);
+    // let largestNumber;
 
     return largestNumber;
 }
@@ -120,7 +131,11 @@ function getLargerNumber(arg1, arg2) {
  */
 
 function replaceLastName(fullName, newLastName) {
-    let newFullName;
+    const index = fullName.indexOf(" "); //number
+
+    let firstName = fullName.substring(0, index)
+
+    let newFullName = firstName + " " + newLastName;
     return newFullName;
 }
 
@@ -129,11 +144,28 @@ function replaceLastName(fullName, newLastName) {
  *  i.e John smith -> John Smith
  */
 
+// "string".toUpperCase();
+// console.log( "boo!".toUpperCase() );
 function capitalizeLastName(fullName) {
-    let capitalizeLastName;
+    const index = fullName.indexOf(" "); //number
+    let lowercaseLetter = fullName[index + 1]; //lower case s
+    let capitalLetter = lowercaseLetter.toUpperCase(lowercaseLetter); // upper case S
+    // let capitalizeLastName = capitalLetter + fullName[index +2] 
+    const LastName = fullName.substring(index + 2);
+    let newLastName = capitalLetter + LastName
+    let firstName = fullName.substring(0, index)
+        // console.log('-' + firstName + '-')
+        // console.log('-' + newLastName + '-')
+
+    let capitalizeLastName = firstName + " " + newLastName
+
+    // console.log(lowercaseLetter)
+    // console.log(fullName)
 
     return capitalizeLastName;
 }
+
+// console.log(capitalizeLastName("John smith"))
 
 /***
  * Change below so that it will also compare data types
@@ -141,11 +173,12 @@ function capitalizeLastName(fullName) {
  *
  */
 function compareEquality(a, b) {
-    if (a == b) {
+    if (a === b) {
         // Change this line
         return 'Equal';
+    } else {
+        return 'Not Equal';
     }
-    return 'Not Equal';
 }
 
 /** The function should use the strict inequality operator
@@ -162,7 +195,7 @@ function compareEquality(a, b) {
 
 function testStrictNotEqual(a, b) {
     // Only Change Code Below this Line
-    if (undefined) {
+    if (a !== b) {
         // Only Change Code Above this Line
 
         return 'Not Equal';
@@ -184,6 +217,7 @@ function testStrictNotEqual(a, b) {
 
 function testLogicalAnd(num) {
     // code here
+
 }
 
 /**
@@ -197,6 +231,8 @@ function testLogicalAnd(num) {
 
 function testLogicalOr(num) {
     // code here
+
+
 }
 
 /** Using the modulus operator determine if the argument is an even or odd number */
@@ -204,6 +240,11 @@ function testLogicalOr(num) {
 function isEvenOrOdd(isEven) {
     return isEven;
 }
+
+
+//STOP HERE 
+
+
 
 /****
  *  You are given a variable num:
@@ -291,4 +332,4 @@ try {
     }
 } catch (e) {}
 
-module.exports = myExports;
+export default myExports;
