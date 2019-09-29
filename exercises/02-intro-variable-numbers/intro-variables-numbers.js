@@ -241,6 +241,9 @@ function testLogicalOr(num) {
     return "No"
 }
 
+
+
+
 /** Using the modulus operator determine if the argument is an even or odd number */
 
 function isEvenOrOdd(isEven) {
