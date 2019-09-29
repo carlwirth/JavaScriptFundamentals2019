@@ -1,7 +1,8 @@
 //set myName variable to your name;
-function myName(name) {
-    const myName = test;
-    return myName;
+function myName(Carl) {
+    const myName = Carl; {
+        return myName;
+    }
 }
 
 
@@ -61,8 +62,8 @@ function getTheCharacterPosition(name, letter) {
 
 function stringLength(str) {
     // let billy = (str);
-    let bob = stringLength(str.Length);
-    return bob;
+    let billy = (str.length);
+    return billy;
 
 }
 
@@ -217,7 +218,10 @@ function testStrictNotEqual(a, b) {
 
 function testLogicalAnd(num) {
     // code here
-
+    if (num > 5 && num < 10) {
+        return "Yes"
+    }
+    return "No"
 }
 
 /**
@@ -231,8 +235,10 @@ function testLogicalAnd(num) {
 
 function testLogicalOr(num) {
     // code here
-
-
+    if (num = (20 || 25)) {
+        return "Yes"
+    }
+    return "No"
 }
 
 /** Using the modulus operator determine if the argument is an even or odd number */
