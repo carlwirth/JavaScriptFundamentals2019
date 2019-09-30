@@ -236,6 +236,7 @@ function testLogicalAnd(num) {
 function testLogicalOr(num) {
     // code here
     if (num = (20 || 25)) {
+        // if (num = 20 || num = 25) {
         return "Yes"
     }
     return "No"
@@ -285,6 +286,11 @@ function caseInSwitch(num) {}
  *   timesFive() should return 5
  *
  */
+
+function timesFive(num) {
+    return 5 * num;
+}
+
 
 /***
  *  create a function called lowerCaseName that will return the string lowerCased
