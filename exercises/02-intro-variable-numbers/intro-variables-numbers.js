@@ -235,8 +235,8 @@ function testLogicalAnd(num) {
 
 function testLogicalOr(num) {
     // code here
-    if (num = (20 || 25)) {
-        // if (num = 20 || num = 25) {
+    // if (num = (20 || 25)) {
+    if (num === 20 || num === 25) {
         return "Yes"
     }
     return "No"
@@ -248,8 +248,13 @@ function testLogicalOr(num) {
 /** Using the modulus operator determine if the argument is an even or odd number */
 
 function isEvenOrOdd(isEven) {
-    return isEven;
+    return isEven % 2 === 0 ? true : false;
 }
+//     if (num % 2 == 0) {
+//         return 'True'
+//     }
+//     return 'False'
+// }
 
 
 
@@ -273,7 +278,45 @@ function isEvenOrOdd(isEven) {
  * 
  *  *****/
 
-function caseInSwitch(num) {}
+function caseInSwitch(num) {
+    switch (num) {
+        case 1:
+            return "one";
+        case 2:
+            return "two";
+        case 3:
+            return "three";
+
+
+
+            ONE,
+            if num is equal to 1
+            TWO,
+            if num is equal to 2
+            THREE,
+            if num is equal to 3
+            FOUR,
+            if num is equal to 4
+                -
+                FIVE,
+                if num is equal to 5
+                -
+                SIX,
+                if num is equal to 6
+                -
+                SEVEN,
+                if num is equal to 7
+                -
+                EIGHT,
+                if num is equal to 8
+                -
+                NINE,
+                if num is equal to 9
+
+        default:
+            return "Please try again"
+    }
+}
 
 /***
  *  Create a function named timesFive
