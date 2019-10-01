@@ -44,6 +44,7 @@ function addFunctionsIntoArray() {
     const numbers = [10, 10];
     let adding = (numbers[0] + numbers[1]);
     let subtracting = (numbers[0] - numbers[1]);
+
     return adding
     return subtracting
 
