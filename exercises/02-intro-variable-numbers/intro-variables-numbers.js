@@ -289,29 +289,29 @@ function caseInSwitch(num) {
 
 
 
-            ONE,
-            if num is equal to 1
-            TWO,
-            if num is equal to 2
-            THREE,
-            if num is equal to 3
-            FOUR,
-            if num is equal to 4
-                -
-                FIVE,
-                if num is equal to 5
-                -
-                SIX,
-                if num is equal to 6
-                -
-                SEVEN,
-                if num is equal to 7
-                -
-                EIGHT,
-                if num is equal to 8
-                -
-                NINE,
-                if num is equal to 9
+            // ONE,
+            // if num is equal to 1
+            // TWO,
+            // if num is equal to 2
+            // THREE,
+            // if num is equal to 3
+            // FOUR,
+            // if num is equal to 4
+            //     -
+            //     FIVE,
+            //     if num is equal to 5
+            //     -
+            //     SIX,
+            //     if num is equal to 6
+            //     -
+            //     SEVEN,
+            //     if num is equal to 7
+            //     -
+            //     EIGHT,
+            //     if num is equal to 8
+            //     -
+            //     NINE,
+            //     if num is equal to 9
 
         default:
             return "Please try again"

@@ -4,9 +4,14 @@
  */
 
 function createAnArray() {
-  let array = ["JavaScript"]; // Do not change this line
-  /* Add three more items to the array here */
-  return array;
+    let array = ["JavaScript"]; // Do not change this line
+    /* Add three more items to the array here */
+    // const array = [];
+    array.push("CSS");
+    array.push("HTML");
+    array.push("java");
+
+    return array;
 }
 
 /**
@@ -16,8 +21,10 @@ function createAnArray() {
  */
 
 function accessingAnArray() {
-  const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
-  // Code here
+    const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
+    // Code here
+    let bad = cars[0];
+    return bad;
 }
 
 /***
@@ -31,8 +38,15 @@ function accessingAnArray() {
  * addFunctionsIntoArray()[1](10, 10) // 0;
  */
 
+
 function addFunctionsIntoArray() {
-  // Create and return an array here
+    // Create and return an array here 
+    const numbers = [10, 10];
+    let adding = (numbers[0] + numbers[1]);
+    let subtracting = (numbers[0] - numbers[1]);
+    return adding
+    return subtracting
+
 }
 
 /**
@@ -56,6 +70,8 @@ function highestNumber(array) {}
  **/
 
 function combineArray(array1, array2) {}
+
+
 
 /**
  * Given an array of objects, where each object has an ID,
@@ -111,11 +127,15 @@ function isPalindrome(str) {}
  * @return {array}
  */
 
-function removeDuplicates() {
-  let numbers = [2, 3, 4, 4, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 5, 32, 3, 4, 5]; // You can change this line
 
-  /** Return the an array of unique values */
-  return;
+//STOP HERE FOR WEDNESDAY 
+
+
+function removeDuplicates() {
+    let numbers = [2, 3, 4, 4, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 5, 32, 3, 4, 5]; // You can change this line
+
+    /** Return the an array of unique values */
+    return;
 }
 
 /**
@@ -123,14 +143,14 @@ function removeDuplicates() {
  * @return {string} type of hat
  */
 function accessObject() {
-  // Do not change clothes here
-  let clothes = {
-    hat: "ballcap",
-    shirt: "jersey",
-    shoes: "cleats"
-  };
-  // Only change code below this line
-  return;
+    // Do not change clothes here
+    let clothes = {
+        hat: "ballcap",
+        shirt: "jersey",
+        shoes: "cleats"
+    };
+    // Only change code below this line
+    return;
 }
 
 /**
@@ -140,14 +160,14 @@ function accessObject() {
  */
 
 function createStudentObject() {
-  // Do not change student here
-  let student = {
-    firstName: "",
-    lastName: "",
-    skills: []
-  };
-  // Add code here
-  return student;
+    // Do not change student here
+    let student = {
+        firstName: "",
+        lastName: "",
+        skills: []
+    };
+    // Add code here
+    return student;
 }
 
 /**
@@ -167,15 +187,15 @@ function createDogObject() {}
  */
 
 function returnObjectProperties() {
-  // Do not change dog here
-  let dog = {
-    tail: 1,
-    legs: 4,
-    friends: ["Rusty", "Sparky"],
-    name: "Rocket"
-  };
-  // Add code here
-  // hint you need to return an array
+    // Do not change dog here
+    let dog = {
+        tail: 1,
+        legs: 4,
+        friends: ["Rusty", "Sparky"],
+        name: "Rocket"
+    };
+    // Add code here
+    // hint you need to return an array
 }
 
 /**
@@ -208,48 +228,48 @@ function combineObject(obj1, obj2) {}
  */
 
 function updateRecords(id, prop, value) {
-  // Do not change collection here
+    // Do not change collection here
 
-  let collection = {
-    // id
-    "2548": {
-      album: "Slippery When Wet",
-      artist: "Bon Jovi",
-      tracks: ["Let It Rock", "You Give Love a Bad Name"]
-    },
-    // id
-    "2468": {
-      album: "1999",
-      artist: "Prince",
-      tracks: ["1999", "Little Red Corvette"]
-    },
-    // id
-    "1245": {
-      artist: "Robert Palmer",
-      tracks: []
-    },
-    // id
-    "5439": {
-      album: "ABBA Gold"
-    }
-  };
-  // Only change the code after this line
-  // Logic Here
+    let collection = {
+        // id
+        "2548": {
+            album: "Slippery When Wet",
+            artist: "Bon Jovi",
+            tracks: ["Let It Rock", "You Give Love a Bad Name"]
+        },
+        // id
+        "2468": {
+            album: "1999",
+            artist: "Prince",
+            tracks: ["1999", "Little Red Corvette"]
+        },
+        // id
+        "1245": {
+            artist: "Robert Palmer",
+            tracks: []
+        },
+        // id
+        "5439": {
+            album: "ABBA Gold"
+        }
+    };
+    // Only change the code after this line
+    // Logic Here
 }
 
 module.exports = {
-  createAnArray,
-  accessingAnArray,
-  highestNumber,
-  isPalindrome,
-  createDogObject,
-  createStudentObject,
-  returnObjectProperties,
-  combineArray,
-  accessObject,
-  combineObject,
-  removeDuplicates,
-  updateRecords,
-  findAndAbort,
-  addFunctionsIntoArray
+    createAnArray,
+    accessingAnArray,
+    highestNumber,
+    isPalindrome,
+    createDogObject,
+    createStudentObject,
+    returnObjectProperties,
+    combineArray,
+    accessObject,
+    combineObject,
+    removeDuplicates,
+    updateRecords,
+    findAndAbort,
+    addFunctionsIntoArray
 };
