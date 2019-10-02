@@ -80,8 +80,9 @@ function highestNumber(array) {
  **/
 
 function combineArray(array1, array2) {
-    let newArray = ([array1, array2]);
+    let newArray = array1.concat(array2);
     return newArray;
+    // return (array1, array2);
 }
 
 
