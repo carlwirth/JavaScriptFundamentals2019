@@ -23,8 +23,8 @@ function createAnArray() {
 function accessingAnArray() {
     const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
     // Code here
-    let bad = cars[0];
-    return bad;
+    // let bad = cars[0];
+    return cars[0];
 }
 
 /***
@@ -45,8 +45,8 @@ function addFunctionsIntoArray() {
     let adding = (numbers[0] + numbers[1]);
     let subtracting = (numbers[0] - numbers[1]);
 
-    return adding
-    return subtracting
+    return adding;
+    return subtracting;
 
 }
 
@@ -59,7 +59,16 @@ function addFunctionsIntoArray() {
  * highestNumber([-1, -5, -4]) // -1
  *
  **/
-function highestNumber(array) {}
+function highestNumber(array) {
+    for (let arrayIndex = 0; arrayIndex < arr.length; arrayIndex++)
+        for (let subArrayIndex = 0; subArrayIndex < arr[arrayIndex].length; subArrayIndex++)
+            if (arr[arrayIndex][subArrayIndex] > highestNumber[arrayIndex])
+                highestNumber[arrayIndex] = arr[arrayIndex][subArrayIndex];
+
+
+    return highestNumber;
+}
+
 
 /**
  * Combine an array by using the spread operator
@@ -70,7 +79,10 @@ function highestNumber(array) {}
  * combineArray(['Japan','China','India'], ['USA','UK']) // ['Japan','China','India','USA','UK']
  **/
 
-function combineArray(array1, array2) {}
+function combineArray(array1, array2) {
+    let newArray = ([array1, array2]);
+    return newArray;
+}
 
 
 
