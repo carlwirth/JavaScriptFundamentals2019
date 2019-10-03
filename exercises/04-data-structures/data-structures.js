@@ -232,7 +232,7 @@ function returnObjectProperties() {
 
 function combineObject(obj1, obj2) {
 
-    // const output = obj1 + obj2;
+    const output = [(obj1) + (obj2)];
     return output;
 }
 
