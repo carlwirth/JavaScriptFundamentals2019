@@ -169,7 +169,7 @@ function accessObject() {
         shoes: "cleats"
     };
     // Only change code below this line
-    return;
+    return (clothes.hat);
 }
 
 /**
@@ -186,6 +186,10 @@ function createStudentObject() {
         skills: []
     };
     // Add code here
+    student.firstName = "Carl";
+    student.lastName = "Wirth";
+    student.skills = ["Driving", "Mechanics", "Blacksmithing"];
+
     return student;
 }
 
@@ -214,7 +218,9 @@ function returnObjectProperties() {
         name: "Rocket"
     };
     // Add code here
-    // hint you need to return an array
+    // hint you need to return an array 
+    let doggie = Object.keys(dog);
+    return doggie;
 }
 
 /**
@@ -224,7 +230,11 @@ function returnObjectProperties() {
  * @return {object} obj1 and obj2 combined
  */
 
-function combineObject(obj1, obj2) {}
+function combineObject(obj1, obj2) {
+
+    // const output = obj1 + obj2;
+    return output;
+}
 
 /**
  * Find a record with the matching id in a collection of records.
