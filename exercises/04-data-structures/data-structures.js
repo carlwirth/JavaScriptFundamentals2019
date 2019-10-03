@@ -60,14 +60,17 @@ function addFunctionsIntoArray() {
  *
  **/
 function highestNumber(array) {
-    for (let arrayIndex = 0; arrayIndex < arr.length; arrayIndex++)
-        for (let subArrayIndex = 0; subArrayIndex < arr[arrayIndex].length; subArrayIndex++)
-            if (arr[arrayIndex][subArrayIndex] > highestNumber[arrayIndex])
-                highestNumber[arrayIndex] = arr[arrayIndex][subArrayIndex];
-
-
-    return highestNumber;
+    return Math.max(...array); // so easy and it works.
+    // or can do
+    // const newArray = [...array].sort((a, b) => b - a));
 }
+//    this was copied from google search and it did NOT work
+//  for (let arrayIndex = 0; arrayIndex < arr.length; arrayIndex++)
+//         for (let subArrayIndex = 0; subArrayIndex < arr[arrayIndex].length; subArrayIndex++)
+//             if (arr[arrayIndex][subArrayIndex] > highestNumber[arrayIndex])
+//                 highestNumber[arrayIndex] = arr[arrayIndex][subArrayIndex];
+//     return highestNumber;
+// }
 
 
 /**
@@ -147,9 +150,11 @@ function isPalindrome(str) {}
 
 function removeDuplicates() {
     let numbers = [2, 3, 4, 4, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 5, 32, 3, 4, 5]; // You can change this line
+    let myNumbers = new Set(numbers);
 
     /** Return the an array of unique values */
-    return;
+    // let newNumbers = vals.sort().reduce(function(a, b) { if (b != a) a.unshift(b); return a }, [])
+    return [...myNumbers];
 }
 
 /**
