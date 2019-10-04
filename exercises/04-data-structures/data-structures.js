@@ -41,12 +41,17 @@ function accessingAnArray() {
 
 function addFunctionsIntoArray() {
     // Create and return an array here 
-    const numbers = [10, 10];
-    let adding = (numbers[0] + numbers[1]);
-    let subtracting = (numbers[0] - numbers[1]);
 
-    return adding;
-    return subtracting;
+
+    // const sum = addFunctionsIntoArray();
+    // const difference = addFunctionsIntoArray();
+    // return sum(), difference();
+
+    // const numbers = [10, 10];
+    // let adding = (numbers[0] + numbers[1]);
+    // let subtracting = (numbers[0] - numbers[1]);
+    // return adding;
+    // return subtracting;
 
 }
 
