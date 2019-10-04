@@ -281,40 +281,26 @@ function isEvenOrOdd(isEven) {
 function caseInSwitch(num) {
     switch (num) {
         case 1:
-            return "one";
+            return "ONE";
         case 2:
-            return "two";
+            return "TWO";
         case 3:
-            return "three";
-
-
-
-            // ONE,
-            // if num is equal to 1
-            // TWO,
-            // if num is equal to 2
-            // THREE,
-            // if num is equal to 3
-            // FOUR,
-            // if num is equal to 4
-            //     -
-            //     FIVE,
-            //     if num is equal to 5
-            //     -
-            //     SIX,
-            //     if num is equal to 6
-            //     -
-            //     SEVEN,
-            //     if num is equal to 7
-            //     -
-            //     EIGHT,
-            //     if num is equal to 8
-            //     -
-            //     NINE,
-            //     if num is equal to 9
+            return "THREE";
+        case 4:
+            return "FOUR";
+        case 5:
+            return "FIVE";
+        case 6:
+            return "SIX";
+        case 7:
+            return "SEVEN";
+        case 8:
+            return "EIGHT";
+        case 9:
+            return "NINE";
 
         default:
-            return "Please try again"
+            return "PLEASE TRY AGAIN"
     }
 }
 
