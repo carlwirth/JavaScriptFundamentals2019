@@ -200,7 +200,15 @@ function createStudentObject() {
  * @return {object}
  */
 
-function createDogObject() {}
+function createDogObject() {
+    let myDog = {
+        name: "",
+        legs: "",
+        tails: "",
+        owners: [],
+    }
+    return myDog;
+}
 
 /**
  *  Using Object.keys, return all the properties contained in the object.
@@ -232,9 +240,21 @@ function returnObjectProperties() {
 
 function combineObject(obj1, obj2) {
 
-    const output = [(obj1) + (obj2)];
+    // const output = ([obj1][obj2]);
+    // const output = ([obj1] + [obj2]);
+    // let output = ([obj1] + [obj2]);
+    // const output = obj1 + obj2;
+    // const output = [obj1] + [obj2]; 
+    // return combineObject[0] + [1];
+    // let output = combineObject[0] + combineObject[1];
+    // let output = (combineObject[0] + combineObject[1]);
+    // const output = (combineObject[0] + combineObject[1]);
+
     return output;
 }
+
+// Console.log(output);
+
 
 /**
  * Find a record with the matching id in a collection of records.
