@@ -41,6 +41,11 @@ function accessingAnArray() {
 
 function addFunctionsIntoArray() {
     // Create and return an array here 
+    let add2 = (arg1, arg2) => arg1 + arg2;
+    let sub2 = (arg1, arg2) => arg1 - arg2;
+    const array = [add2, sub2];
+    return array;
+    // or could do 
 
 
     // const sum = addFunctionsIntoArray();
@@ -131,7 +136,35 @@ function combineArray(array1, array2) {
  * // Please note, the loop never iterates over the last item, because we found our object. There is no need to continue looping.
  */
 
-function findAndAbort(arr, id) {}
+// function findAndAbort(arr, id) {
+//     let obj = {};
+//     for (let i 0; i < arr.length; i++) {
+//         if (arr[i].id === id) {
+//             obj = {
+//                 id: arr[i].id,
+//                 firstName: arr[i].firstName,
+//                 lastName: arr[i].lastName
+//             };
+//             break;
+//         }
+//     }
+//     return obj;
+// }
+
+// or could do...
+
+function findAndAbort(arr, id) {
+    let obj = {};
+    for (let i = 0; i < arr.length; i++) {
+        const myPerson = arr[i];
+        if (myPerson.id === id) {
+            obj = myPerson;
+            break;
+        }
+    }
+    return obj;
+}
+
 
 /**
  * A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or racecar.
@@ -139,10 +172,14 @@ function findAndAbort(arr, id) {}
  * Use the split and join methods to solve this problem
  * @param  {[string]}  string
  * @return {Boolean}
- *
+ 
  */
 
-function isPalindrome(str) {}
+function isPalindrome(str) {
+    let forward = str.split("");
+    let backward = str.split("").reverse();
+    return forward.join('') === backward.join('');
+}
 
 /***
  * Use sets to remove duplicate elements from an array
