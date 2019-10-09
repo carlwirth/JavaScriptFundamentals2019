@@ -19,7 +19,16 @@
  *  
  */
 
-function createGraduateObject(name, graduationYear, skills, links) {}
+function createGraduateObject(name, graduationYear, skills, links) {
+    let output = {
+        name: name,
+        graduationYear: graduationYear,
+        skills: Object.values(skills),
+        links: { github: links[0], linkedIn: links[1] }
+    };
+
+    return output;
+}
 
 /**
  * Loop through a nested array of people. For each person in the array,
@@ -45,9 +54,22 @@ function createGraduateObject(name, graduationYear, skills, links) {}
  * It should look something like this:
  * @see /challenges/10-7-challenges/people-example.png
  */
-function createCsvString(people) {}
+function createCsvString(people) {
+    let obj = {};
+    for (let i = 0; i < people.length; i++) {
+        const people = obj[i];
+        // let name = (people[0]);
+        // let gender = (people[1]);
+        // let location = people[2];
+        // let dob = people[3];
+    }
+    // const output = name + "," + gender + "," + location + "," + dob;
+    const output = people[0] + "," + people[1] + "," + people[2] + "," + people[3];
+
+    return output;
+}
 
 module.exports = {
-  createGraduateObject,
-  createCsvString
+    createGraduateObject,
+    createCsvString
 };
