@@ -55,19 +55,33 @@ function createGraduateObject(name, graduationYear, skills, links) {
  * @see /challenges/10-7-challenges/people-example.png
  */
 function createCsvString(people) {
-    let obj = {};
-    for (let i = 0; i < people.length; i++) {
-        const people = obj[i];
-        // let name = (people[0]);
-        // let gender = (people[1]);
-        // let location = people[2];
-        // let dob = people[3];
+    let csv = ['"Name","Gender","Location","DOB"'];
+    let cols = ['Name', 'Gender', 'Location', 'DOB'];
+    for (let person of people) {
+        let rowOut = [];
+        for (let col of cols) {
+            rowOut.push(JSON.stringify(person[col.toLowerCase()]));
+        }
+        csv.push(rowOut.join(','));
     }
-    // const output = name + "," + gender + "," + location + "," + dob;
-    const output = people[0] + "," + people[1] + "," + people[2] + "," + people[3];
-
-    return output;
+    return csv.join('\n') + '\n';
 }
+// let obj = {};
+// for (let i = 0; i < people.length; i++) {
+//     const people = obj[i];
+
+// let name = (people[0]);
+// let gender = (people[1]);
+// let location = people[2];
+// let dob = people[3];
+
+// const output = name + "," + gender + "," + location + "," + dob;
+// const output = people[0] + "," + people[1] + "," + people[2] + "," + people[3];
+// return output;
+
+
+
+
 
 module.exports = {
     createGraduateObject,

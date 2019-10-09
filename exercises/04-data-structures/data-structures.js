@@ -281,19 +281,21 @@ function returnObjectProperties() {
  */
 
 function combineObject(obj1, obj2) {
-
-    // const output = ([obj1][obj2]);
-    // const output = ([obj1] + [obj2]);
-    // let output = ([obj1] + [obj2]);
-    // const output = obj1 + obj2;
-    // const output = [obj1] + [obj2]; 
-    // return combineObject[0] + [1];
-    // let output = combineObject[0] + combineObject[1];
-    // let output = (combineObject[0] + combineObject[1]);
-    // const output = (combineObject[0] + combineObject[1]);
-
-    return output;
+    const newObject = {...obj1, ...obj2 };
+    return newObject;
 }
+// let newArray = obj1.concat(obj2);
+// return newArray;
+// const output = ([obj1][obj2]);
+// const output = ([obj1] + [obj2]);
+// let output = ([obj1] + [obj2]);
+// const output = obj1 + obj2;
+// const output = [obj1] + [obj2]; 
+// return combineObject[0] + [1];
+// let output = combineObject[0] + combineObject[1];
+// let output = (combineObject[0] + combineObject[1]);
+// const output = (combineObject[0] + combineObject[1]);
+
 
 // Console.log(output);
 

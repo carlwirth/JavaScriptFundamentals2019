@@ -10,10 +10,10 @@
  *  */
 
 function isEvenOrOdd(number) {
-    if (num % 2 == 0) {
-        return 'is Even'
+    if (number % 2 == 0) {
+        return 'Even'
     }
-    return 'is Odd'
+    return 'Odd'
 }
 
 
