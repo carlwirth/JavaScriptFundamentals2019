@@ -16,7 +16,19 @@
  *
  * user.email = "icanhascheeseburger@yahoo.com"; // This should not change newUser
  */
-const changeEmail = (user, newEmail) => {};
+const changeEmail = (user, newEmail) => {
+    const newUser = {...changeEmail, email: newEmail };
+    return newUser;
+}
+
+
+//     const newEmail2 = JSON.parse(JSON.stringify(changeEmail));
+//     changeEmail.email[2].newEmail2 = newEmail;
+//     return changeEmail;
+// };
+
+
+
 
 /**
  * Add a new item to a shopping cart. You should deep copy any array and objects.
@@ -40,6 +52,6 @@ const changeEmail = (user, newEmail) => {};
 const addToCart = (shoppingCart, newItem) => {};
 
 module.exports = {
-  changeEmail,
-  addToCart
+    changeEmail,
+    addToCart
 };
