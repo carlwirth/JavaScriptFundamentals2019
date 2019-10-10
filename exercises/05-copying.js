@@ -17,7 +17,7 @@
  * user.email = "icanhascheeseburger@yahoo.com"; // This should not change newUser
  */
 const changeEmail = (user, newEmail) => {
-    const newUser = {...changeEmail, email: newEmail };
+    const newUser = {...user, email: newEmail };
     return newUser;
 }
 
@@ -49,7 +49,16 @@ const changeEmail = (user, newEmail) => {
  * shoppingCart[0].price = 9000000; // This should not change newShoppingCart
  * newItem.price = 10; // This should not change newItem
  */
-const addToCart = (shoppingCart, newItem) => {};
+const addToCart = (shoppingCart, newItem) => {
+    // JSON.parse(JSON.stringify(shoppingCart) const newShoppingCart = [{...shoppingCart, ...newItem }];
+    // const newShoppingCart = addToCart(shoppingCart, newItem {})
+    // const newShoppingCart = $.extend(true, {}, newItem);
+    return newShoppingCart;
+}
+
+
+
+
 
 module.exports = {
     changeEmail,
