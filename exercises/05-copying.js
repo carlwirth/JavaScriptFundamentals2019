@@ -53,7 +53,7 @@ const addToCart = (shoppingCart, newItem) => {
     // JSON.parse(JSON.stringify(shoppingCart) const newShoppingCart = [{...shoppingCart, ...newItem }];
     // const newShoppingCart = addToCart(shoppingCart, newItem {})
     // const newShoppingCart = $.extend(true, {}, newItem);
-    return newShoppingCart;
+    return;
 }
 
 

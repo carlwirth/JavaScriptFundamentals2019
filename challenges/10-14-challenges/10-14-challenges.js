@@ -7,7 +7,31 @@
  * @example removeElement(['one','two','three']) // ['two', 'three']
  */
 
-function removeElement(arr) {}
+function removeElement(arr) {
+    let newarr = [...arr];
+    newarr.shift();
+    return newarr;
+}
+// OR CAN DO
+// return [...arr.slice(1)];
+//  OR 
+// let [, ...rest] = arr;
+// return arr;
+
+// THese did not work despite what they said
+//     const (, ...rest) = arr;
+//     return arr;
+// }
+
+
+//     const [one, ...rest] = removeElement;
+//     return removeElement;
+// }
+//     arr.shift();
+//     arr = arr.splice(1);
+// }
+// return arr;
+
 
 /**
  * truncate a string
@@ -33,6 +57,6 @@ function removeElement(arr) {}
 function truncateString(str, num) {}
 
 module.exports = {
-  removeElement,
-  truncateString
+    removeElement,
+    truncateString
 };
