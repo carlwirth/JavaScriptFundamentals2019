@@ -7,7 +7,11 @@
  *
  */
 
-function objectMaker() {}
+function objectMaker() {
+    return {
+        name: "Carl"
+    };
+}
 
 /**
  *  As a programmer, I would like to be able to call on a function that returns an object that will allow me to
@@ -36,9 +40,9 @@ function objectMaker() {}
  */
 
 function groceryList() {
-  let groceryItems = [];
+    let groceryItems = [];
 
-  return {};
+    return {};
 }
 
 /**
@@ -51,21 +55,21 @@ function groceryList() {
  * @returns {Object} an object that has two methods. See comments below.
  */
 const calculator = () => {
-  /**
-   * Create a private variable called "sum"
-   * @var {number}
-   */
-  /**
-   * Return an object that has two methods:
-   *
-   * 1. The first is a "setter" function that a.) accepts a parameter of type number and
-   *    b.) adds that number to the "sum" above.
-   * @param {number}
-   *
-   * 2. The second function is a "getter" function
-   * that should return the value of "sum" above.
-   * @returns {number} the value of sum
-   */
+    /**
+     * Create a private variable called "sum"
+     * @var {number}
+     */
+    /**
+     * Return an object that has two methods:
+     *
+     * 1. The first is a "setter" function that a.) accepts a parameter of type number and
+     *    b.) adds that number to the "sum" above.
+     * @param {number}
+     *
+     * 2. The second function is a "getter" function
+     * that should return the value of "sum" above.
+     * @returns {number} the value of sum
+     */
 };
 
 /**
@@ -295,22 +299,22 @@ const generateTally = array => {};
 const arrayToObject = arr => {};
 
 module.exports = {
-  objectMaker,
-  groceryList,
-  printer,
-  printNames,
-  multiplier,
-  map,
-  doubleValues,
-  filter,
-  deleteUser,
-  extractKey,
-  find,
-  findUser,
-  addItems,
-  generateTally,
-  flattenArray,
-  arrayToObject,
-  calculator,
-  guessingGame
+    objectMaker,
+    groceryList,
+    printer,
+    printNames,
+    multiplier,
+    map,
+    doubleValues,
+    filter,
+    deleteUser,
+    extractKey,
+    find,
+    findUser,
+    addItems,
+    generateTally,
+    flattenArray,
+    arrayToObject,
+    calculator,
+    guessingGame
 };
