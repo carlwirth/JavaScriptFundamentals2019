@@ -1,5 +1,5 @@
 /***
- *
+ *  a test
  *  Create a function that  returns an object.
  *  The object will be a simple object with just the key being name and the value being the students name
  *   objectMaker() // {'name':'matina'}
@@ -12,6 +12,22 @@ function objectMaker() {
         name: "Carl"
     };
 }
+
+// this was from class... not that I understand but who cares?
+// At least I had a small chance to copy this stuff down, THIS Time.
+
+// const forEach = (arr, callback) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         callback(arr[i], i, arr);
+//     }
+// };
+
+// !!!!!!-Matina - you asked if I understand.  I replied that I typed what you had on the board and it did not Worker.  You then went on to the next problem. You keep doing this as I fall further behind.
+// const elems = ["abc","xyz"];
+// elems.forEach((a)=>{
+//  console.log(a);
+// })
+
 
 /**
  *  As a programmer, I would like to be able to call on a function that returns an object that will allow me to
@@ -44,6 +60,14 @@ function groceryList() {
 
     return {};
 }
+
+const showFirstAndLast = arr => {
+    let newArr = [];
+    arr.forEach((word) => {
+        // other stuff here I couldn't copy down
+    })
+};
+return newArr;
 
 /**
  *  slides
@@ -150,6 +174,33 @@ const printNames = () => {};
 /*** callback ends */
 
 /*** Higher Order Functions Starts */
+
+/**** ForEach */
+
+/**
+ * Build the forEach function yourself
+ * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+ * @param {array} arr
+ * @param {function} callback
+ */
+const forEach = (arr, callback) => {};
+
+/**
+ * Given an array of strings, remove all letters of each value except the first and last character in the strings
+ * @param {array} arr
+ * @returns {array} new array, where each values is the first and character of each string
+ * @example
+ *   showFirstAndLast(['colt','matt', 'tim', 'udemy']); // ["ct", "mt", "tm", "uy"]
+ *   showFirstAndLast(['hi', 'goodbye', 'smile']) // ['hi', 'ge', 'se']
+ */
+const showFirstAndLast = arr => {
+    const newArr = arr.map((word, index, array) => {
+        // const isEven --- more st&&ff I could not copy down.
+        return newArr;
+    })
+};
+
+/***ForEach ends */
 
 /**
  * Recreate the map function
@@ -298,7 +349,9 @@ const generateTally = array => {};
  */
 const arrayToObject = arr => {};
 
-module.exports = {
+module.exports = { <<
+    <<
+    << < HEAD
     objectMaker,
     groceryList,
     printer,
@@ -317,4 +370,29 @@ module.exports = {
     arrayToObject,
     calculator,
     guessingGame
-};
+}; ===
+===
+=
+objectMaker,
+groceryList,
+printer,
+printNames,
+multiplier,
+forEach,
+showFirstAndLast,
+map,
+doubleValues,
+filter,
+deleteUser,
+extractKey,
+find,
+findUser,
+addItems,
+generateTally,
+flattenArray,
+arrayToObject,
+calculator,
+guessingGame
+}; >>>
+>>>
+> d5575974af39b73de3921ea0602c78ffe0680301
