@@ -208,15 +208,36 @@ const showFirstAndLast = arr => {
  * @param {array} arr
  * @param {function} callback
  * @returns {array} new array
+ * 
+ * const cars = ['honda','bmw','lexus']
  */
-const map = (arr, callback) => {};
+const map = (arr, callback) => {
+    for (let i = 0; i < arr.length; i++) {
+        callback(arr[i], i, arr)
+    }
+};
+
+function upperCaseCarNames() {
+
+}
 
 /**
  * Multiplies each value in an array by two
  * @param {array} arr an array of numbers e.g. [1, 3, 5]
  * @returns {array} new array, with each value doubled e.g. [2, 5, 10]
  */
-const doubleValues = arr => {};
+
+//  THIS WORKS
+// const doubleValues = (arr) => {
+//     return arr.map (number => {
+//         return number * 2;
+//     })
+// };
+// or can do..
+const doubleValues = (arr) => {
+    return arr.map(number => number * 2);
+};
+
 
 /**
  * Given an array nested with objects
@@ -236,7 +257,9 @@ const doubleValues = arr => {};
  * ];
  * extractKey(arrayOfNames, 'name'); // ['Ellie', 'Tim', 'Matt', 'Colt']
  */
-const extractKey = (arr, key) => {};
+const extractKey = (arr, key) => {
+
+};
 
 /**
  * Build your own filter function
@@ -349,14 +372,14 @@ const generateTally = array => {};
  */
 const arrayToObject = arr => {};
 
-module.exports = { <<
-    <<
-    << < HEAD
+module.exports = {
     objectMaker,
     groceryList,
     printer,
     printNames,
     multiplier,
+    forEach,
+    showFirstAndLast,
     map,
     doubleValues,
     filter,
@@ -370,29 +393,4 @@ module.exports = { <<
     arrayToObject,
     calculator,
     guessingGame
-}; ===
-===
-=
-objectMaker,
-groceryList,
-printer,
-printNames,
-multiplier,
-forEach,
-showFirstAndLast,
-map,
-doubleValues,
-filter,
-deleteUser,
-extractKey,
-find,
-findUser,
-addItems,
-generateTally,
-flattenArray,
-arrayToObject,
-calculator,
-guessingGame
-}; >>>
->>>
-> d5575974af39b73de3921ea0602c78ffe0680301
+};
