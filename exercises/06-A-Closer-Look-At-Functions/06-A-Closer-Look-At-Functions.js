@@ -9,20 +9,20 @@
 
 function objectMaker() {
     return {
-        name: "Carl"
+        'name': "Carl"
     };
 }
 
-// this was from class... not that I understand but who cares?
-// At least I had a small chance to copy this stuff down, THIS Time.
-
+// **** this was from class... not that I understand but who cares?
+// **** At least I had a small chance to copy this stuff down, THIS Time.
+// **** 
 // const forEach = (arr, callback) => {
 //     for (let i = 0; i < arr.length; i++) {
 //         callback(arr[i], i, arr);
 //     }
 // };
 
-// !!!!!!-Matina - you asked if I understand.  I replied that I typed what you had on the board and it did not Worker.  You then went on to the next problem. You keep doing this as I fall further behind.
+// !!!!!!-Matina - you asked if I understand.  I replied that I typed what you had on the board and it did not work.  You then went on to the next problem. You keep doing this as I fall further behind.
 // const elems = ["abc","xyz"];
 // elems.forEach((a)=>{
 //  console.log(a);
@@ -56,10 +56,17 @@ function objectMaker() {
  */
 
 function groceryList() {
-    let groceryItems = [];
+    const groceryListobj = groceryList();
+    groceryListobj.add("pears");
+    groceryListobj.add("oranges");
+    groceryListobj.add("apples");
 
-    return {};
+    return groceryListobj.getlist(1);
+    return groceryListobj.remove(2);
+    return groceryListobj.getlist();
 }
+
+
 
 const showFirstAndLast = arr => {
     let newArr = [];
@@ -79,6 +86,7 @@ return newArr;
  * @returns {Object} an object that has two methods. See comments below.
  */
 const calculator = () => {
+
     /**
      * Create a private variable called "sum"
      * @var {number}
@@ -144,7 +152,10 @@ const guessingGame = numberOfRounds => {};
  * @param {number} a
  * @param {number} b
  */
-const multiplier = (a, b) => {};
+const multiplier = (a, b) => {
+    return multiplier;
+};
+
 
 /** Currying End */
 
@@ -393,4 +404,4 @@ module.exports = {
     arrayToObject,
     calculator,
     guessingGame
-};
+}; *
