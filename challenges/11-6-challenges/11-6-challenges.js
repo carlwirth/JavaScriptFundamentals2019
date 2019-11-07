@@ -12,29 +12,33 @@
  */
 
 const waitUntilLater = (callback, time = 0) => {
-  setTimeout(() => {
-    callback();
-  }, time);
+    setTimeout(() => {
+        callback();
+    }, time);
 };
 
 const buttonElement = document.querySelector("#button");
 const emailElement = document.querySelector("#email");
 
 const getEmailText = () => {
-  return emailElement.value;
+    return emailElement.value;
 };
 
 buttonElement.addEventListener("click", () => {
-  const hiddenElement = document.querySelector(".hidden");
-  if (hiddenElement) {
-    hiddenElement.classList.remove("hidden");
-    hiddenElement.classList.add("pullDown");
-  }
+    const hiddenElement = document.querySelector(".hidden");
+    if (hiddenElement) {
+        hiddenElement.classList.remove("hidden");
+        hiddenElement.classList.add("pullDown");
+    }
 
-  /**
-   * ONLY CHANGE THE NEXT TWO LINES. Fix the bug so that callbacks are used correctly.
-   * (You will still need to use the `waitUntilLater` and `getEmailText` functions.)
-   */
-  const emailText = waitUntilLater(getEmailText, 500);
-  buttonElement.textContent = "Send to " + emailText;
+    /**
+     * ONLY CHANGE THE NEXT TWO LINES. Fix the bug so that callbacks are used correctly.
+     * (You will still need to use the `waitUntilLater` and `getEmailText` functions.)
+     */
+    // const emailText = waitUntilLater(getEmailText, 500);
+    waitUntilLater(() => {
+        const emailText = getEmailText();
+        // buttonElement.textContent = "Send to " + emailElement.value;
+        buttonElement.textContent = "Send to " + emailText;
+    }, 500);
 });

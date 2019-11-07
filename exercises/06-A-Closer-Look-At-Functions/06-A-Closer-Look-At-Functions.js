@@ -310,6 +310,12 @@ const deleteUser = (arr, id) => {};
  * @returns {mixed} a single value in the array
  */
 const find = (arr, callback) => {};
+let value = '';
+for (let i = 0; i < arr.length; i++) {
+    if (callback(arr[i], i, arr)) value = arr[i];
+}
+// return value;
+
 
 /**
  * Find and return the matching user in an array of user objects
@@ -330,7 +336,13 @@ const find = (arr, callback) => {};
  * findUser(users, 1025);
  * // { id: 1025, username:"newyorkfarmer", email: "johndoe@example.com" }
  */
-const findUser = (arr, id) => {};
+console.log(find(user => user.id === 1025));
+
+
+const findUser = (arr, id) => {
+    return arr.find(e => e.id === id);
+};
+
 
 /**
  * Given an array of numbers, return the sum
@@ -340,14 +352,25 @@ const findUser = (arr, id) => {};
  *  addItems([1,5,6]) // 12
  *  addItems([1,-2,-3]) // -4
  */
-const addItems = arr => {};
+const addItems = arr => {
+    let sum = arr.reduce((acc, val) => {
+        return acc + val;
+    });
+    return sum;
+};
 
 /**
  * Create a function that flattens an array (that is, it should "unnest" a nested array).
  * @param {array} array e.g. `[[1, 3], [5, 10]]`
  * @returns {array} new, flattened array e.g. `[1, 3, 5, 10]`
  */
-const flattenArray = array => {};
+const flattenArray = array => {
+    return array.reduce((array1, array2) => {
+        let flattenArray = [...array1, ...array2];
+        return flattenArray;
+    });
+};
+
 
 /**
  * Create a function that tallies the number of each kind of "thing" within the array
@@ -357,7 +380,25 @@ const flattenArray = array => {};
  *   let fruits = ['Apple', 'Orange', 'Apple', 'Blueberry', 'Grape', 'Grape'];
  *   generateTally(generateTally); // {Apple: 2, Orange: 1, Blueberry: 1, Grape: 2}
  */
-const generateTally = array => {};
+const generateTally = array => {
+    let count = array => ((arr, val) => {
+        if (!arr[val]) arr[val] = 1;
+        else arr[val] = arr[val] + 1;
+        return arr;
+    }, {});
+    return count;
+};
+
+// or can do
+// const generateTally = array => {
+//     let count = array.reduce((arr, val) => {
+//         arr[val] = arr[val] ? arr[val] + 1 : 1;
+//         return arr;
+//     }, {});
+//     return count;
+// };
+
+
 
 /**
  * Create a function, that when given an array of object literals, will index the object literals by a single column
@@ -381,7 +422,13 @@ const generateTally = array => {};
  *   456: {id, 456, name: 'Rachel', age: 35}
  * }
  */
-const arrayToObject = arr => {};
+const arrayToObject = arr => {
+    let obj = arr.reduce((acc, val) => {
+        acc[val.id] = val;
+        return acc;
+    }, {});
+};
+
 
 module.exports = {
     objectMaker,
@@ -404,4 +451,4 @@ module.exports = {
     arrayToObject,
     calculator,
     guessingGame
-}; *
+};
