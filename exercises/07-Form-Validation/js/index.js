@@ -20,11 +20,15 @@
 *  2) You can edit this form however you see fit as the engineer to achieve your goals. (i.e add ids or additional classes if needed)
 */
 const form = document.querySelector("#form");
+
 form.addEventListener("submit", event => {
+
     event.preventDefault();
-    const elements = [...event.target.elements].filter(element =>
+    const elements = [...event.target.elements].filter((element) => {
         element.matches("input, select")
-    );​
+    });
+
+
     elements.forEach(element => {
         if (element.value) {
             element.classList.remove("error");
@@ -32,4 +36,17 @@ form.addEventListener("submit", event => {
             element.classList.add("error");
         }
     });
+
+    // if (!isValid) return;
+    // console.log("I will continue");
+
+    const box = document.querySelector('#box');
+    elements.forEach(element => {
+
+        const paragraph = document.createElement('p');
+        paragraph.textContent = '${element.getAttribute("placeholder")}: ${element.value';
+    })
+
+    form.style.display = "none"
+
 });

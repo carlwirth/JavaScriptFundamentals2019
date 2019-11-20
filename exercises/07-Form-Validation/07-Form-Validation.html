@@ -20,7 +20,7 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Sign Up For NYC Tour</h2>
-                    <form method="POST" onsubmit="return formValidation()" name="form" id="form">
+                    <form method="POST" name="form" id="form">
                         <div class="input-group">
                             <input class="input--style-1" type="text" placeholder="NAME" name="customerName" id="name" />
                         </div>
@@ -34,14 +34,22 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender" id="gender">
-                        <option disabled="disabled" selected="selected"
+                                        <!-- <select name="gender" id="gender"> -->
+
+
+                                        <!-- <option disabled="disabled" selected="selected"
                           >GENDER</option
                         >
                         <option>Male</option>
                         <option>Female</option>
                         <option>Other</option>
-                      </select>
+                      </select> -->
+                                        <select name="gender" id="gender">
+                            <option value="">GENDER</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
                                         <div class="select-dropdown"></div>
                                     </div>
                                 </div>
