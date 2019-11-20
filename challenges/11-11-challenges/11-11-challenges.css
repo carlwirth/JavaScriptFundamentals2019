@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sumana", serif;
+}
+
+
+/* const heading = document.querySelector('h1, h2, h3, h4, h5, h6');
+heading.style.fontFamily = "Arial"; */
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+
+/* const hiddenElement = document.querySelector('.hidden');
+hiddenElement.style.display = 'block'; */

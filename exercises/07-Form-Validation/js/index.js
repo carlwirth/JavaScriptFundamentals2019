@@ -19,3 +19,17 @@
 *  1) An error class named .error you can use this class to apply the proper css to an invalid element.
 *  2) You can edit this form however you see fit as the engineer to achieve your goals. (i.e add ids or additional classes if needed)
 */
+const form = document.querySelector("#form");
+form.addEventListener("submit", event => {
+    event.preventDefault();
+    const elements = [...event.target.elements].filter(element =>
+        element.matches("input, select")
+    );​
+    elements.forEach(element => {
+        if (element.value) {
+            element.classList.remove("error");
+        } else {
+            element.classList.add("error");
+        }
+    });
+});

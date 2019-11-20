@@ -11,10 +11,16 @@
  * in the code below.
  */
 
-const waitUntilLater = (callback, time = 0) => {
+const waitUntilLater = (callback, time = 0) => { <<
+    << << < HEAD
     setTimeout(() => {
         callback();
-    }, time);
+    }, time); ===
+    === =
+    setTimeout(() => {
+        console.log(callback());
+    }, time); >>>
+    >>> > 7 b35e46fc0bdb1ac9824e28a288f3be60222f0ec
 };
 
 const buttonElement = document.querySelector("#button");
