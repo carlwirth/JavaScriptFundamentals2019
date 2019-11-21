@@ -19,34 +19,43 @@
 *  1) An error class named .error you can use this class to apply the proper css to an invalid element.
 *  2) You can edit this form however you see fit as the engineer to achieve your goals. (i.e add ids or additional classes if needed)
 */
+
 const form = document.querySelector("#form");
-
 form.addEventListener("submit", event => {
-
     event.preventDefault();
-    const elements = [...event.target.elements].filter((element) => {
-        element.matches("input, select")
-    });
 
+    // Convert object of elements into array of form elements
+    const elements = [...event.target.elements].filter(
+        // Filters outs elements that are not user input
+        element => element.matches("input, select")
+    );
 
+    let isValid = true;
     elements.forEach(element => {
-        if (element.value) {
-            element.classList.remove("error");
-        } else {
+        if (!element.value) {
+            // If invalid (required)
+            isValid = false;
             element.classList.add("error");
+        } else {
+            // Else remove error styling if there
+            element.classList.remove("error");
         }
     });
 
-    // if (!isValid) return;
-    // console.log("I will continue");
+    // Stop if there is validation errors
+    if (!isValid) return;
 
-    const box = document.querySelector('#box');
+    // Hide forem
+    form.style.display = "none";
+
+    // Display results
+    const box = document.querySelector("#box");
     elements.forEach(element => {
-
-        const paragraph = document.createElement('p');
-        paragraph.textContent = '${element.getAttribute("placeholder")}: ${element.value';
-    })
-
-    form.style.display = "none"
-
+        const paragraph = document.createElement("p");
+        paragraph.textContent = `${element.placeholder || element.name}: ${
+      element.value
+    }`;
+        box.appendChild(paragraph);
+    });
+    box.classList.remove("hidden");
 });
