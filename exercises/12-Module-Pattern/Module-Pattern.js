@@ -21,9 +21,10 @@
 const { studentGrades } = require("../12-Module-Pattern/students");
 
 const TeacherGradeBook = (() => {
-  return {};
+
+    return {};
 })();
 
 module.exports = {
-  TeacherGradeBook
+    TeacherGradeBook
 };
